@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<form action="#" method="post"> <!-- позволяет объединить элементы формы в единую структуру и сообщает браузеру, воспринимать эту структура как единое целое -->
+<!-- атрибуты тега form
+    action - путь к скрипту, который будет обрабатывать данные введенные в форме
+    method="get | post" – метод, с помощью которого данные будут переданы к программе обработчику ().
+-->
+    <!-- Тег input и его атрибуты
+     Используется для получения информации от пользователя
+     Тег может принимать разный вид, в зависимости от значения атрибута type
+     Type может принимать следующие значения:
+
+     text - однострочное текстовое поле
+     email	- валидация ввода почтового адреса
+     url - валидация ввода url
+     password - для ввода пароля (вводимая информация отображается ****)
+     search	- текстовое поле для поиска
+
+     number	- число
+     range	- ввод чисел в диапазоне от ... до ...
+
+     checkbox - чекбокс
+     radio - радиокнопка
+
+     file - для загрузки файлов
+
+     button	- кнопка
+     reset	- кнопка сброса
+     submit	- кнопка отправки
+
+     color - взятие цвета
+     date - datepicker
+     time - timepicker
+
+     hidden	- скрытое поле
+
+
+     Атрибуты тега input (при любом значении атрибута type):
+        autocomplete="on|off" - автозаполнение формы
+        autofocus - фокусировка курсора на элементе формы
+        disabled,  readonly - Input заблокирован
+        form="form_id" - принадлежность в форме (по ее id)
+        name="some_name"
+     Атрибуты тега input (если type="text"):
+        required - поле необходимо заполнить (иначе форма не отправиться)
+        placeholder="some text" - подсказка для пользователя
+        maxlength="число" - максимальное число символов
+        minlength="число" - минимальное количество символов
+        value="some value" - значение подставляется в поле
+    Атрибуты тега input (если type="number", type="range"):
+        min="число" - минимальное число
+        max="число" - максимальное число
+        step="число" - шаг
+        value="some value" - значение подставляется в поле
+    Атрибуты тега input (если type="checkbox", type="radio"):
+        checked - пункт выбран
+    Атрибуты тега input (если type="file"):
+        multiple - выбор нескольких файлов
+        accept="тип файла" - загружать только данный тип файла
+        required - необходимо заполнить (иначе форма не отправиться)
+    Атрибуты тега input (если type="date", type="time"):
+        min
+        max
+        value="2017-02-20" | value="12:30"
+     -->
+    <!--
+    Тег textarea и его атрибуты
+    textarea - многострочное текстовое поле
+    Атрибуты:
+        autofocus - фокусировка курсора н аэлементе формы
+        required
+        disabled,  readonly - Input заблокирован
+        form="form_id" - принадлежность в форме (по ее id)
+        cols="число" - количество колонок
+        rows="число" - количество строк
+        maxlength="число" - максимальная длинна
+        placeholder="some text" - подсказка для пользователя
+        wrap="soft | hard" - отвечает за перенос текста
+        soft - Длинный текст, который не помещается в поле по ширине, будет перенесен на новую строку, передаваться на сервер будет как одна строка. Enter устанавливает перенос текста, который сохраняется при отправке формы.
+        hard - Слова в поле переносятся механически, чтобы они поместились в размер области, и при отправке на сервер места автоматического переноса сохраняются. При этом значении обязательно должен присутствовать атрибут cols.
+        off - Переносы строк отключены. При введении длинного текста без переносов, он будет печататься в одну строку, при этом будет отображаться полоса прокрутки.
+
+        resize: none; css
+    -->
+
+    <fieldset> <!-- рамка -->
+        <legend>Текстовые поля</legend> <!-- title -->
+        <div>
+            <label for="text">Однострочное текстовое поле</label>
+            <input id="text" type="text">
+        </div>
+
+        <div>
+            <label for="email">Поле для ввода E-mail</label>
+            <input id="email" type="email">
+        </div>
+
+        <div>
+            <label for="url">Поле для ввода URL</label>
+            <input id="url" type="url">
+        </div>
+
+        <div>
+            <label for="pwd">Поле для ввода Пароля</label>
+            <input id="pwd" type="password">
+        </div>
+
+        <div>
+            <label for="search">Поле для Поиска</label>
+            <input id="search" type="search">
+        </div>
+
+        <div>
+            <label for="textarea">Многострочное текстовое поле</label>
+            <textarea id="textarea"></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Переключатели</legend>
+
+        <fieldset>
+            <legend>Одиночные радио кнопки</legend>
+
+            <label><input type="radio">Вариант</label>
+            <label><input type="radio" checked>Еще вариант</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Радио группа</legend>
+
+            <label><input name="sex" type="radio">Мужской</label>
+            <label><input name="sex" type="radio">Женский</label>
+            <label><input name="sex" type="radio">Не определился</label>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Флажки</legend>
+
+        <fieldset>
+            <legend>Одиночные флажки</legend>
+
+            <label><input type="checkbox">Вариант</label>
+            <label><input type="checkbox" checked>Еще вариант</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Группа флажков</legend>
+
+            <label><input name="message[]" type="checkbox">Сообщение №1</label>
+            <label><input name="message[]" type="checkbox">Сообщение №1</label>
+            <label><input name="message[]" type="checkbox">Сообщение №1</label>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Загрузка файлов</legend>
+
+        <div>
+            <label for="file">Только один файл любого типа</label>
+            <input id="file" type="file">
+        </div>
+
+        <div>
+            <label for="imageFile">Только изображения</label>
+            <input id="imageFile" type="file" accept="image/*">
+        </div>
+
+        <div>
+            <label for="multiFile">Несколько файлов любого типа</label>
+            <input id="multiFile" type="file" multiple>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Кнопки</legend>
+
+        <input type="button" value="Обычная кнопка">
+        <button>
+            <strong><em>HTML-содержимое</em></strong>
+        </button>
+
+        <input type="submit" value="Отправить">
+
+        <input type="reset" value="Сброс">
+
+        <input type="image" src="regbut.jpg" alt="Регистрация">
+    </fieldset>
+
+    <!--
+    Тег select и его атрибуты
+    Для создания списка
+    Атрибуты
+        autofocus - фокусировка курсора на элементе формы
+        disabled - элемент заблокирован
+        form="form_id" - принадлежность в форме (по ее id)
+        multiple - возможность множественного выбора
+        name - имя для выпадающего списка
+        required - обязательно для заполнения
+        size="число" - количество видимых элементов списка
+    -->
+
+    <!--
+    Тег option и его атрибуты
+    Используется для создания элемента списка, вложен в select
+    Атрибуты
+        disabled - элемент заблокирован
+        label - описание к элементу списка
+           либо <option label="описание"></option>,
+           либо <option>описание</option>
+        selected - выбран по-умолчанию
+        value - значение элемента списка, для передачи на сервер
+    -->
+
+    <!--
+    Тег optgroup и его атрибуты
+    Используется для объединения элементов списка в группу
+    Атрибуты
+        disabled - элемент заблокирован
+        label - описание группы элементов списка
+    -->
+
+    <fieldset>
+        <legend>Поле со списком</legend>
+
+        <select>
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+        </select>
+
+        <select size="5">
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+            <option value="6">Item 6</option>
+            <option value="7">Item 7</option>
+            <option value="8">Item 8</option>
+            <option value="9">Item 9</option>
+            <option value="10">Item 10</option>
+        </select>
+
+        <select multiple>
+            <option value="1">Item 1</option>
+            <option value="2">Item 2</option>
+            <option value="3">Item 3</option>
+            <option value="4">Item 4</option>
+            <option value="5">Item 5</option>
+        </select>
+
+
+        <select>
+            <optgroup label="Item group 1">
+                <option value="1">Item 1</option>
+                <option value="2">Item 2</option>
+                <option value="3" selected>Item 3</option>
+                <option value="4">Item 4</option>
+                <option value="5">Item 5</option>
+            </optgroup>
+            <optgroup label="Item group 1">
+                <option value="6">Item 6</option>
+                <option value="7">Item 7</option>
+                <option value="8">Item 8</option>
+                <option value="9">Item 9</option>
+                <option value="10">Item 10</option>
+            </optgroup>
+        </select>
+
+        <select size="10" multiple>
+            <optgroup label="Item group 1">
+                <option value="1">Item 1</option>
+                <option value="2">Item 2</option>
+                <option value="3" selected>Item 3</option>
+                <option value="4">Item 4</option>
+                <option value="5">Item 5</option>
+            </optgroup>
+            <optgroup label="Item group 1">
+                <option value="6">Item 6</option>
+                <option value="7">Item 7</option>
+                <option value="8">Item 8</option>
+                <option value="9">Item 9</option>
+                <option value="10">Item 10</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
