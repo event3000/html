@@ -1,0 +1,97 @@
+/*padding-top: 10px;
+padding-right: 10px;
+padding: 10px 20px 15px; top right/left bottom*/
+
+.block1,
+.block2 {
+	padding:50px; 
+	border: 3px solid red;
+	height: 150px;
+	width: 300px;
+	margin:40px; 
+}
+
+.block2 {
+	box-sizing: border-box;
+}
+
+/*.visible, 
+.hidden {
+	
+	visibility: collapse; 
+}
+*/
+
+.float {
+	float:left;
+	height:100px;
+	width:100px;
+	border: 1px solid black; 
+}
+
+.clear {
+	clear: both;
+}
+
+.overflow-visible,
+.overflow-scroll,
+.overflow-hidden {
+	
+	width: 100px;
+	height: 100px;
+	border: 1px solid black; 
+	margin:20px; 
+}  
+
+.overflow-scroll {
+	overflow: scroll;
+	
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.static,
+.fixed,
+.relative,
+.absolute {
+	width: 250px;
+	height: 60px;
+	border: 2px dashed green;
+	margin:10px;
+}
+
+.fixed {
+	position: fixed;
+	top:20px;
+	left: 500px;
+}
+
+.relative {
+	position: relative;
+	top: 20px;
+	left: 100px;
+}
+
+.absolute {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

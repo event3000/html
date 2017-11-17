@@ -1,0 +1,48 @@
+/*Псевдоклассы*/
+a:hover{
+	color:green;
+}
+
+a:link{
+	color:red;
+}
+
+a:visited{
+	color:red;
+}
+
+a:link{
+	color:red;
+}
+
+
+.menu li:first-child{
+	border-top: 1px solid black;
+
+}
+
+.menu li:last-child{
+	background: red;
+
+}
+
+menu li:nth-child(odd| ...)
+{
+
+}
+
+p:first-letter{
+	color:red;
+}
+
+/*ПРИОРИТЕТ СТИЛЕЙ
+стиль бра-ра
+стиль автора
+стиль польз-ля
+стиль автора с доб. !impoertant
+стиль польз-ля с !impoertant
+
+
+СПЕЦИФИЧНОСТЬ ПО БАЛАММ
+
+*/
