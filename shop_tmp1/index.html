@@ -9,71 +9,72 @@
 </head>
 
 <body>
-      <div class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Каталог</a>
-                    </li>
 
-                    <li>
-                        <a href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </div> 
+    <!-- menu -->
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="blog.html">Каталог</a>
+            </li>
+            <li>
+                <a href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+    </div> 
+    <a href=""></a>
 
-            
-            <div class="row">
-                <div class="col-12">
-                    <ul class="slider">
-                        <li class="active-slide"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+    <!-- slider -->      
+    <div class="row">
+        <div class="col-12">
+            <ul class="slider">
+                <li class="active-slide"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- общий контейнер grid layout -->     
+    <div class="container">
+
+        <!-- 1 строка каталога -->
+        <div class="row">
+            <div class="col-6">
+               <div class="cat1">  
+                    <p>CAT1</p>
+                    <div class="col-6">
+                        <div class="item">
+                           <p>item1</p>
+                           <!-- img in -->
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="item">
+                            <p>item2</p>
+                            <!-- img in -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
-         
-                <div class="container">
-                    <!-- 1 строка каталога -->
-
-                    <!-- категория 1 -->
-                    <div class="row">
-                        <div class="col-6">
-                           <div class="cat1">  
-                                <p>CAT1</p>
-                                <div class="col-6">
-                                    <div class="item">
-                                       <p>item1</p>
-                                       <!-- img in -->
-                                    </div>
-                                </div>
-
-                                <div class="col-6">
-
-                                    <div class="item">
-                                        <p>item2</p>
-                                        <!-- img in -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- категория 2 -->
-                        <div class="col-6">
-                            <div class="cat2">  
-                                <p>CAT2</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2 строка каталога -->
-                    <div class="row">
-                    </div>
+            
+            <div class="col-6">
+                <div class="cat2">  
+                    <p>CAT2</p>
                 </div>
-           
+            </div>
+        </div>
+
+        <!-- 2 строка каталога -->
+        <div class="row" style="background: red; height: 100px;">
+            2 строка каталога
+        </div>
+    </div>
+
 
 </body>
 

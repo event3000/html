@@ -1,5 +1,6 @@
 @import url(grid.css);
 
+ /*		menu	*/
 .menu {
 	position: fixed;
 	top: 0;
@@ -16,8 +17,10 @@
 	display: inline-block;
 }
 
+
+
 .menu a{
-	text-decoration: none;
+	text-decoration:none;
 	display: block;
 	padding: 8px 10px;
 }
@@ -26,8 +29,9 @@
 	background: green;
 }
 
+/*	slider 	*/
 .slider{
-	height: 40vh; 
+	height: 50vh; 
 	margin-top:40px; 
 }
 
@@ -57,6 +61,7 @@ li.active-slide {
 	display: block;
 }
 
+/*	grid layout 	*/
 .container { /*что бы было не широко на экране*/
 	margin:0 auto;
 	max-width: 1000px;	
@@ -70,13 +75,13 @@ li.active-slide {
 .cat1 {
 	background: gray;
 	margin-right:5px;
-	/*padding: 5px;*/
+	
 }
 
 .cat2 {
 	background: gray;
 	margin-left:5px;
-	/*padding: 5px;*/
+	
 }
 
 .item {
@@ -85,26 +90,31 @@ li.active-slide {
 	height: 250px;
 }
 
-/*blog str*/
+/*!!!	blog page: ;*/
 
 .good {
 	height: 200px;
 	background: red;
 }
 
-.info-p{
-	position: relative;
+
+.info-rel-p{
+	position: relative; /*тянется сюда к относительному*/
 }
+
 
 .info {
-	height: 400px;
+	height: 600px;
+	width: 50px;
 	background: green;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
+	position: absolute; /*абс блок отсюда абс-ый*/
+	top: 0px;
+	left: 0px;
+	right: 0px;
 }
 
+
+
 .catalog {
-	margin-top; 68px;
+	margin-top:66px;
 }
