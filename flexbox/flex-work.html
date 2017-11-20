@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox work</title>
+        <link rel="stylesheet" type="text/css" href="css/flex-work.css">
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- хедер -->
+            <div class="row-container" style="background: red;">
+                <div class="flex1">
+                    <p>хедер</p>
+                </div>
+            </div>    
+
+            <div class="row-container">
+               <!--  1 ГЛ ЭЛ -->
+                <div class="flex2 border column-container ">
+
+
+
+                    <!-- 1  эл - 2 в строку -->
+                    <div class="mr mb row-container shadow">
+                       <div class="flex1 darkgray ">
+                            Img
+                        </div>
+
+                       <div class="flex1 gray">
+                            <p>Title 2й эл</p>
+                            <p>Decription Decription Decription 
+                            Decription Decription Decription
+                            Decription Decription Decription
+                            Decription Decription Decription</p>
+
+                       </div>
+                    </div>
+
+                    <!-- 2 эл 2 в строку/2 в строку -->
+                    <div class="mr row-container flex1">
+
+                        <div class="flex1 column-container">
+                            <div class="flex2 darkgray">
+                                img
+                            </div>
+                        
+
+                            <div class="flex2 gray">
+                                    text
+                            </div>
+                        </div>
+
+                        <div class="flex1 column-container">
+                            <div class="flex2 darkgray">
+                                img 
+                            </div>
+                        
+
+                            <div class="flex2 gray">
+                                text
+                            </div>
+                        </div>
+
+                        
+
+                    </div>                     
+                </div>
+
+                <!-- 2 ГЛ ЭЛ   ВЕРТ -->
+                <div class="flex1 border  column-container">
+                    
+                    <!-- 1я верт ячейка подел на 2 -->
+                    <div class="border column-container height gray">
+                        <div class="flex1 darkgray">
+                            Img  111
+                        </div>
+                        <div class="flex2">
+                            Desc
+                        </div>
+                    </div>
+                    
+                    <!-- 2я верт ячейка -->
+                    <div class="border gray">
+                        <p>Title 2й эл</p>
+                        <p>Decription Decription Decription 
+                            Decription Decription Decription
+                            Decription Decription Decription
+                            Decription Decription Decription</p>
+                    </div>
+                    
+                    <!-- 3я верт ячейка -->
+                    <div class="border gray">
+                        <p>Title 3й эл</p>
+                        <p> Decription Decription Decription
+                            Decription Decription Decription
+                            Decription Decription Decription
+                            Decription Decription Decription</p>
+                    </div>
+                </div>
+
+            </div>
+
+                        <!-- хедер -->
+            <div class="row-container" style="background: red;">
+                <div class="flex1">
+                    <p>footer</p>
+                </div>
+            </div>    
+
+
+        </div>
+
+    </body>
+</html>

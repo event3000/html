@@ -105,7 +105,7 @@ li.active-slide {
 
 .info {
 	height: 600px;
-	width: 50px;
+	/*width: 50px;*/
 	background: green;
 	position: absolute; /*абс блок отсюда абс-ый*/
 	top: 0px;
