@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body>
+
+	<h1>Bootstrap</h1>
+
+<!-- 	ДОМАШНЕЕ ЗАДАНИЕ:
+=====================================================
+1 ряд: 
+Навигация (меню) - 
+https://getbootstrap.com/docs/3.3/components/#nav
+http://bootstrap-3.ru/components.php#nav
+
+Thumbnails (эскизы) -
+https://getbootstrap.com/docs/3.3/components/#thumbna..
+http://bootstrap-3.ru/components.php#thumbnails
+
+2 ряд:
+Слайдер (карусель) -
+https://getbootstrap.com/docs/3.3/javascript/#carousel
+http://bootstrap-3.ru/javascript.php#carousel
+
+Формы - 
+https://getbootstrap.com/docs/3.3/css/#forms
+http://bootstrap-3.ru/css.php#forms
++ кнопки 
+
+3 ряд:
+!!! Таблицы - 
+https://getbootstrap.com/docs/3.3/css/#tables
+http://bootstrap-3.ru/css.php#tables
+
+Вкладки (tabs) - 
+https://getbootstrap.com/docs/3.3/javascript/#tabs
+http://bootstrap-3.ru/javascript.php#tabs   
+
+===================================================
+  -->
+
+
+
+<!-- ТАБЛИЦЫ
+__________________________	
+
+class="table table-striped"  --- обычная + класс зебра
+.table-bordered границы разделения
+.table-hover курсор при наведении подобно ховеру 
+.table-condensed компактная таблица 
+
+
+контекстные классы (цвет строк и отдельных ячеек):
+.active	- 	серый цв		Применяет цвет при наведении на конкретную строку или ячейку
+.success -	зеленый	цв		Указывает на успешное или позитивное действие
+.info -  синий цв				Указывает на нейтральные информативные изменения или действия
+.warning - 	желтый			Указывает на предупреждения, которые могут потребовать внимания
+.danger - красный		Указывает на опасное или потенциально негативное действие
+
+Адаптивные таблицы .table меняем на .table-responsive
+-->
+
+<h2>Таблицы</h2>
+
+<table class="table table-striped! table-bordered! table-hover! ">
+  <tr>
+  	<th>#</th>
+  	<th>Имя</th>
+  	<th>Фамилия</th>
+  	<th>Пользователь</th>
+  </tr>
+  <tr class="danger">
+  	<td>1</td>
+  	<td>Ivan</td>
+  	<td>Casey</td>
+  	<td>@Casey</td>
+  </tr>
+  <tr>
+  	<td class="success">2</td>
+  	<td>Ben</td>
+  	<td>Com</td>
+  	<td>@Com</td>
+  </tr>
+  <tr>
+  	<td>3</td>
+  	<td>Laura</td>
+  	<td>Svenson</td>
+  	<td>@Svenson</td>
+  </tr>
+</table>
+
+
+<!-- ВКЛАДКИ TABS
+fade - плавное угасание
+-->
+
+<h2>Вкладки (табы)</h2>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
+  <li><a href="#profile" data-toggle="tab">Профиль</a></li>
+  <li><a href="#messages" data-toggle="tab">Сообщения</a></li>
+  <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">
+  	<p>Главная содержимое<br><br>
+  	  	
+  	  	Здесь произвольный текст. Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+  </div>
+  <div class="tab-pane fade" id="profile">
+  	<p>Профиль содержимое<br><br>
+  	  	
+  	  	Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park. Здесь произвольный текст. </p>
+  </div>
+  <div class="tab-pane fade" id="messages">
+  	<p>Сообщения содержимое<br><br>
+  	  	
+  	  	Сommodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park. Здесь произвольный текст. Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress </p>
+  </div>
+  <div class="tab-pane fade" id="settings">
+  	<p>Сообщения содержимое<br><br>
+  	  	  	
+	  	Sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park. Здесь произвольный текст. Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress. Сommodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit </p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
