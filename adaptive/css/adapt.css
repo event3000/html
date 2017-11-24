@@ -1,0 +1,70 @@
+@media tip {
+	styles	
+}
+
+@media screen and (max-width:600px)  {
+	.slider{
+		display: none;
+	}	
+
+	#menu {
+
+	}
+}
+
+@media (min-width:200px), (max-width:600px)  {
+	.slider{
+		display: none;
+	}	
+
+	#menu {
+
+	}
+}
+
+/*логич операторы
+"and" и
+"," либо то либо другое 
+not screen  (в нач меди запроса) для всего кроме
+not screen,  (в нач меди запроса) для всего кроме до запятой
+
+ТИП устройств
+all (все)
+print (печать)
+screen (экраны все)
+speech
+
+ХАР-КИ
+width ширина px | em
+min-width: ;
+max-width
+height px | em
+min-height: ;
+max-height: ;*/
+
+orientation: portrait
+orientation: landscape
+
+
+РАЗМЕРЫ СТАНДАРТЫ PX
+1600
+1200 
+960
+760 ! kr
+480 ! kr
+320
+
+бутстрап 4-4-6-12
+		 л м м ом
+
+
+РАЗМЕРЫ ШИР БЛОКОВ
+px
+em (от разм шрифта род)
+%
+
+font-size 16pt;
+1em = 16pt;
+1.567em;
+
+
